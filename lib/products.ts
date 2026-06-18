@@ -2,10 +2,40 @@ import { Product, ProductFilters, ProductCategory } from '@/types';
 import productsData from '@/data/products.json';
 
 /**
- * Get all products
+ * Get the base path for the application
+ */
+export function getBasePath(): string {
+  return process.env.NODE_ENV === 'production' ? '/blushloomstudio' : '';
+}
+
+/**
+ * Get image path with basePath prefix for production
+ */
+export function getImagePath(path: string): string {
+  // If path already includes basePath or is external, return as is
+  if (path.startsWith('http') || path.includes('/blushloomstudio/')) {
+    return path;
+  }
+  
+  // For production, prepend basePath to absolute paths
+  if (process.env.NODE_ENV === 'production' && path.startsWith('/')) {
+    return `${getBasePath()}${path}`;
+  }
+  
+  return path;
+}
+
+/**
+ * Get all products with corrected image paths
  */
 export function getAllProducts(): Product[] {
-  return productsData as Product[];
+  const products = productsData as Product[];
+  
+  // Transform image paths to include basePath in production
+  return products.map(product => ({
+    ...product,
+    images: product.images.map(img => getImagePath(img))
+  }));
 }
 
 /**
