@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useMemo, useEffect } from 'react';
+import { useState, useMemo, useEffect, Suspense } from 'react';
 import { useSearchParams } from 'next/navigation';
 import Link from 'next/link';
 import { ProductFilters as Filters } from '@/types';
@@ -9,7 +9,7 @@ import ProductGrid from '@/components/ProductGrid';
 import ProductFilters from '@/components/ProductFilters';
 import { Search, ArrowUpDown, ArrowLeft } from 'lucide-react';
 
-export default function ShopPage() {
+function ShopContent() {
   const searchParams = useSearchParams();
   const [filters, setFilters] = useState<Filters>({});
   const [sortBy, setSortBy] = useState<SortOption>('featured');
@@ -128,6 +128,21 @@ export default function ShopPage() {
         </div>
       </div>
     </div>
+  );
+}
+
+export default function ShopPage() {
+  return (
+    <Suspense fallback={
+      <div className="min-h-screen bg-gradient-to-b from-purple-50 to-white flex items-center justify-center">
+        <div className="text-center">
+          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-purple-600 mx-auto mb-4"></div>
+          <p className="text-gray-600">Loading products...</p>
+        </div>
+      </div>
+    }>
+      <ShopContent />
+    </Suspense>
   );
 }
 
