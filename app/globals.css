@@ -1,0 +1,107 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 255, 255, 240;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@layer base {
+  body {
+    @apply bg-ivory-50 text-gray-900;
+  }
+}
+
+@layer utilities {
+  /* Glassmorphism utility */
+  .glass {
+    @apply bg-white/10 backdrop-blur-md border border-white/20;
+  }
+  
+  .glass-strong {
+    @apply bg-white/20 backdrop-blur-lg border border-white/30;
+  }
+
+  /* Text gradient utilities */
+  .text-gradient-blush {
+    @apply bg-gradient-to-r from-blush-400 to-rose-400 bg-clip-text text-transparent;
+  }
+
+  .text-gradient-lavender {
+    @apply bg-gradient-to-r from-lavender-400 to-blush-300 bg-clip-text text-transparent;
+  }
+
+  /* Smooth scrolling */
+  .smooth-scroll {
+    scroll-behavior: smooth;
+  }
+
+  /* Hide scrollbar but keep functionality */
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+@layer components {
+  /* Button variants */
+  .btn-primary {
+    @apply px-6 py-3 bg-blush-400 hover:bg-blush-500 text-white rounded-full font-medium transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105;
+  }
+
+  .btn-secondary {
+    @apply px-6 py-3 bg-lavender-300 hover:bg-lavender-400 text-white rounded-full font-medium transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105;
+  }
+
+  .btn-outline {
+    @apply px-6 py-3 border-2 border-blush-400 text-blush-400 hover:bg-blush-400 hover:text-white rounded-full font-medium transition-all duration-300;
+  }
+
+  /* Card styles */
+  .card {
+    @apply bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden;
+  }
+
+  .card-glass {
+    @apply glass rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden;
+  }
+
+  /* Section spacing */
+  .section-padding {
+    @apply py-16 md:py-24 px-4 md:px-8;
+  }
+
+  /* Container */
+  .container-custom {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+}
+
+/* Custom animations */
+@keyframes shimmer {
+  0% {
+    background-position: -1000px 0;
+  }
+  100% {
+    background-position: 1000px 0;
+  }
+}
+
+.animate-shimmer {
+  animation: shimmer 2s infinite;
+  background: linear-gradient(
+    to right,
+    transparent 0%,
+    rgba(255, 182, 193, 0.3) 50%,
+    transparent 100%
+  );
+  background-size: 1000px 100%;
+}
+
+/* Made with Bob */

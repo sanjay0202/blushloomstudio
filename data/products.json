@@ -1,0 +1,478 @@
+[
+  {
+    "id": "FAB-001",
+    "name": "Premium Flower Bouquet #1",
+    "description": "Beautiful handcrafted flower bouquet perfect for any occasion",
+    "price": 318,
+    "category": "flowers-and-bouquet",
+    "images": [
+      "/assets/Flowers-and-bouquet/2.jpeg"
+    ],
+    "colors": [
+      "Red",
+      "White",
+      "Pink"
+    ],
+    "customizable": true,
+    "inStock": true,
+    "featured": true,
+    "tags": [
+      "flowers",
+      "bouquet",
+      "gift",
+      "handmade",
+      "decoration"
+    ]
+  },
+  {
+    "id": "FAB-002",
+    "name": "Deluxe Flower Bouquet #2",
+    "description": "Elegant floral arrangement with premium quality flowers",
+    "price": 358,
+    "category": "flowers-and-bouquet",
+    "images": [
+      "/assets/Flowers-and-bouquet/3.jpeg"
+    ],
+    "colors": [
+      "Pink",
+      "Red",
+      "White"
+    ],
+    "customizable": true,
+    "inStock": true,
+    "featured": true,
+    "tags": [
+      "flowers",
+      "bouquet",
+      "gift",
+      "handmade",
+      "decoration"
+    ]
+  },
+  {
+    "id": "FAB-003",
+    "name": "Classic Flower Bouquet #3",
+    "description": "Stunning bouquet designed with love and care",
+    "price": 437,
+    "category": "flowers-and-bouquet",
+    "images": [
+      "/assets/Flowers-and-bouquet/4.jpeg"
+    ],
+    "colors": [
+      "Mixed",
+      "Purple",
+      "Yellow"
+    ],
+    "customizable": true,
+    "inStock": true,
+    "featured": false,
+    "tags": [
+      "flowers",
+      "bouquet",
+      "gift",
+      "handmade",
+      "decoration"
+    ]
+  },
+  {
+    "id": "FAB-004",
+    "name": "Elegant Flower Bouquet #4",
+    "description": "Gorgeous flower arrangement for special moments",
+    "price": 434,
+    "category": "flowers-and-bouquet",
+    "images": [
+      "/assets/Flowers-and-bouquet/5.jpeg"
+    ],
+    "colors": [
+      "Red",
+      "Pink",
+      "White"
+    ],
+    "customizable": true,
+    "inStock": true,
+    "featured": false,
+    "tags": [
+      "flowers",
+      "bouquet",
+      "gift",
+      "handmade",
+      "decoration"
+    ]
+  },
+  {
+    "id": "FAB-005",
+    "name": "Charming Flower Bouquet #5",
+    "description": "Delicate and vibrant flower bouquet",
+    "price": 491,
+    "category": "flowers-and-bouquet",
+    "images": [
+      "/assets/Flowers-and-bouquet/6.jpeg"
+    ],
+    "colors": [
+      "White",
+      "Red",
+      "Yellow"
+    ],
+    "customizable": true,
+    "inStock": true,
+    "featured": false,
+    "tags": [
+      "flowers",
+      "bouquet",
+      "gift",
+      "handmade",
+      "decoration"
+    ]
+  },
+  {
+    "id": "FAB-006",
+    "name": "Beautiful Flower Bouquet #6",
+    "description": "Beautiful handcrafted flower bouquet perfect for any occasion",
+    "price": 446,
+    "category": "flowers-and-bouquet",
+    "images": [
+      "/assets/Flowers-and-bouquet/WhatsApp Image 2026-06-18 at 2.21.06 PM.jpeg"
+    ],
+    "colors": [
+      "Yellow",
+      "White",
+      "Mixed"
+    ],
+    "customizable": true,
+    "inStock": true,
+    "featured": false,
+    "tags": [
+      "flowers",
+      "bouquet",
+      "gift",
+      "handmade",
+      "decoration"
+    ]
+  },
+  {
+    "id": "K-007",
+    "name": "Premium Keychain #1",
+    "description": "Cute and stylish keychain perfect for everyday use",
+    "price": 139,
+    "category": "keychain",
+    "images": [
+      "/assets/keychain/10.jpeg"
+    ],
+    "colors": [
+      "Yellow",
+      "Blue",
+      "Pink"
+    ],
+    "customizable": true,
+    "inStock": true,
+    "featured": false,
+    "tags": [
+      "keychain",
+      "accessory",
+      "gift",
+      "handmade",
+      "cute"
+    ]
+  },
+  {
+    "id": "K-008",
+    "name": "Deluxe Keychain #2",
+    "description": "Handcrafted keychain with unique design",
+    "price": 139,
+    "category": "keychain",
+    "images": [
+      "/assets/keychain/11.jpeg"
+    ],
+    "colors": [
+      "Yellow",
+      "Green",
+      "Multi-color"
+    ],
+    "customizable": true,
+    "inStock": true,
+    "featured": false,
+    "tags": [
+      "keychain",
+      "accessory",
+      "gift",
+      "handmade",
+      "cute"
+    ]
+  },
+  {
+    "id": "K-009",
+    "name": "Classic Keychain #3",
+    "description": "Adorable keychain accessory for your keys",
+    "price": 138,
+    "category": "keychain",
+    "images": [
+      "/assets/keychain/12.jpeg"
+    ],
+    "colors": [
+      "Green",
+      "Purple",
+      "Yellow"
+    ],
+    "customizable": true,
+    "inStock": true,
+    "featured": false,
+    "tags": [
+      "keychain",
+      "accessory",
+      "gift",
+      "handmade",
+      "cute"
+    ]
+  },
+  {
+    "id": "K-010",
+    "name": "Elegant Keychain #4",
+    "description": "Trendy keychain with premium quality materials",
+    "price": 109,
+    "category": "keychain",
+    "images": [
+      "/assets/keychain/13.jpeg"
+    ],
+    "colors": [
+      "Purple",
+      "Green",
+      "Multi-color"
+    ],
+    "customizable": true,
+    "inStock": true,
+    "featured": false,
+    "tags": [
+      "keychain",
+      "accessory",
+      "gift",
+      "handmade",
+      "cute"
+    ]
+  },
+  {
+    "id": "K-011",
+    "name": "Charming Keychain #5",
+    "description": "Charming keychain that makes a great gift",
+    "price": 125,
+    "category": "keychain",
+    "images": [
+      "/assets/keychain/14.jpeg"
+    ],
+    "colors": [
+      "Blue",
+      "Pink",
+      "Purple"
+    ],
+    "customizable": true,
+    "inStock": true,
+    "featured": false,
+    "tags": [
+      "keychain",
+      "accessory",
+      "gift",
+      "handmade",
+      "cute"
+    ]
+  },
+  {
+    "id": "K-012",
+    "name": "Beautiful Keychain #6",
+    "description": "Cute and stylish keychain perfect for everyday use",
+    "price": 145,
+    "category": "keychain",
+    "images": [
+      "/assets/keychain/15.jpeg"
+    ],
+    "colors": [
+      "Green",
+      "Purple",
+      "Yellow"
+    ],
+    "customizable": true,
+    "inStock": true,
+    "featured": true,
+    "tags": [
+      "keychain",
+      "accessory",
+      "gift",
+      "handmade",
+      "cute"
+    ]
+  },
+  {
+    "id": "K-013",
+    "name": "Lovely Keychain #7",
+    "description": "Handcrafted keychain with unique design",
+    "price": 141,
+    "category": "keychain",
+    "images": [
+      "/assets/keychain/8.jpeg"
+    ],
+    "colors": [
+      "Blue",
+      "Green",
+      "Pink"
+    ],
+    "customizable": true,
+    "inStock": true,
+    "featured": true,
+    "tags": [
+      "keychain",
+      "accessory",
+      "gift",
+      "handmade",
+      "cute"
+    ]
+  },
+  {
+    "id": "K-014",
+    "name": "Gorgeous Keychain #8",
+    "description": "Adorable keychain accessory for your keys",
+    "price": 135,
+    "category": "keychain",
+    "images": [
+      "/assets/keychain/9.jpeg"
+    ],
+    "colors": [
+      "Pink",
+      "Multi-color",
+      "Blue"
+    ],
+    "customizable": true,
+    "inStock": true,
+    "featured": false,
+    "tags": [
+      "keychain",
+      "accessory",
+      "gift",
+      "handmade",
+      "cute"
+    ]
+  },
+  {
+    "id": "RAC-015",
+    "name": "Premium Ribbon & Clip Set #1",
+    "description": "Beautiful ribbon and clip set for hair styling",
+    "price": 178,
+    "category": "ribbon-and-clips",
+    "images": [
+      "/assets/ribbon-and-clips/product-1/16.jpeg",
+      "/assets/ribbon-and-clips/product-1/18.jpeg"
+    ],
+    "colors": [
+      "Blue",
+      "Red",
+      "White"
+    ],
+    "customizable": true,
+    "inStock": true,
+    "featured": false,
+    "tags": [
+      "ribbon",
+      "clips",
+      "hair accessory",
+      "handmade",
+      "fashion"
+    ]
+  },
+  {
+    "id": "RAC-016",
+    "name": "Deluxe Ribbon & Clip Set #2",
+    "description": "Elegant hair accessories with premium ribbons",
+    "price": 212,
+    "category": "ribbon-and-clips",
+    "images": [
+      "/assets/ribbon-and-clips/17.jpeg"
+    ],
+    "colors": [
+      "White",
+      "Pink",
+      "Blue"
+    ],
+    "customizable": true,
+    "inStock": true,
+    "featured": false,
+    "tags": [
+      "ribbon",
+      "clips",
+      "hair accessory",
+      "handmade",
+      "fashion"
+    ]
+  },
+  {
+    "id": "RAC-017",
+    "name": "Classic Ribbon & Clip Set #3",
+    "description": "Stylish clips and ribbons for any hairstyle",
+    "price": 203,
+    "category": "ribbon-and-clips",
+    "images": [
+      "/assets/ribbon-and-clips/19.jpeg"
+    ],
+    "colors": [
+      "Blue",
+      "Red",
+      "Multi-color"
+    ],
+    "customizable": true,
+    "inStock": true,
+    "featured": false,
+    "tags": [
+      "ribbon",
+      "clips",
+      "hair accessory",
+      "handmade",
+      "fashion"
+    ]
+  },
+  {
+    "id": "RAC-018",
+    "name": "Elegant Ribbon & Clip Set #4",
+    "description": "Handcrafted hair accessories with unique designs",
+    "price": 169,
+    "category": "ribbon-and-clips",
+    "images": [
+      "/assets/ribbon-and-clips/20.jpeg"
+    ],
+    "colors": [
+      "White",
+      "Pink",
+      "Blue"
+    ],
+    "customizable": true,
+    "inStock": true,
+    "featured": false,
+    "tags": [
+      "ribbon",
+      "clips",
+      "hair accessory",
+      "handmade",
+      "fashion"
+    ]
+  },
+  {
+    "id": "RAC-019",
+    "name": "Charming Ribbon & Clip Set #5",
+    "description": "Pretty ribbon and clip collection for daily wear",
+    "price": 192,
+    "category": "ribbon-and-clips",
+    "images": [
+      "/assets/ribbon-and-clips/7.jpeg"
+    ],
+    "colors": [
+      "Pink",
+      "White",
+      "Multi-color"
+    ],
+    "customizable": true,
+    "inStock": true,
+    "featured": false,
+    "tags": [
+      "ribbon",
+      "clips",
+      "hair accessory",
+      "handmade",
+      "fashion"
+    ]
+  }
+]
