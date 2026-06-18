@@ -3,6 +3,7 @@ const nextConfig = {
   // Only enable static export for production builds
   ...(process.env.NODE_ENV === 'production' && { output: 'export' }),
   basePath: process.env.NODE_ENV === 'production' ? '/blushloomstudio' : '',
+  assetPrefix: process.env.NODE_ENV === 'production' ? '/blushloomstudio' : '',
   images: {
     unoptimized: true, // Required for static export
     formats: ['image/avif', 'image/webp'],
