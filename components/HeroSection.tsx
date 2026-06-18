@@ -4,11 +4,12 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
 import { ArrowRight, Gift, Heart, Sparkles, Star } from 'lucide-react';
+import { getImagePath } from '@/lib/products';
 
 const floatingProducts = [
   {
     name: 'Flower Bouquet',
-    image: '/assets/Flowers-and-bouquet/3.jpeg',
+    image: getImagePath('/assets/Flowers-and-bouquet/3.jpeg'),
     label: 'Best Seller',
     icon: Heart,
     className: 'top-16 left-[6%] rotate-[-10deg]',
@@ -22,7 +23,7 @@ const floatingProducts = [
   },
   {
     name: 'Cute Keychain',
-    image: '/assets/keychain/11.jpeg',
+    image: getImagePath('/assets/keychain/11.jpeg'),
     label: 'Cute Pick',
     icon: Star,
     className: 'top-24 right-[8%] rotate-[12deg]',
@@ -36,7 +37,7 @@ const floatingProducts = [
   },
   {
     name: 'Ribbon Clip',
-    image: '/assets/ribbon-and-clips/19.jpeg',
+    image: getImagePath('/assets/ribbon-and-clips/19.jpeg'),
     label: 'New Style',
     icon: Gift,
     className: 'bottom-28 left-[10%] rotate-[8deg]',

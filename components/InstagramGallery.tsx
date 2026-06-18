@@ -3,36 +3,37 @@
 import { motion } from 'framer-motion';
 import { Instagram, ExternalLink } from 'lucide-react';
 import Image from 'next/image';
+import { getImagePath } from '@/lib/products';
 
 const instagramPosts = [
   {
     id: 1,
-    image: '/assets/Flowers-and-bouquet/2.jpeg',
+    image: getImagePath('/assets/Flowers-and-bouquet/2.jpeg'),
     alt: 'Handcrafted flower bouquet'
   },
   {
     id: 2,
-    image: '/assets/keychain/8.jpeg',
+    image: getImagePath('/assets/keychain/8.jpeg'),
     alt: 'Custom keychain design'
   },
   {
     id: 3,
-    image: '/assets/ribbon-and-clips/7.jpeg',
+    image: getImagePath('/assets/ribbon-and-clips/7.jpeg'),
     alt: 'Elegant ribbon and clips'
   },
   {
     id: 4,
-    image: '/assets/Flowers-and-bouquet/3.jpeg',
+    image: getImagePath('/assets/Flowers-and-bouquet/3.jpeg'),
     alt: 'Beautiful floral arrangement'
   },
   {
     id: 5,
-    image: '/assets/keychain/9.jpeg',
+    image: getImagePath('/assets/keychain/9.jpeg'),
     alt: 'Personalized keychain'
   },
   {
     id: 6,
-    image: '/assets/Flowers-and-bouquet/4.jpeg',
+    image: getImagePath('/assets/Flowers-and-bouquet/4.jpeg'),
     alt: 'Handmade flower bouquet'
   }
 ];
