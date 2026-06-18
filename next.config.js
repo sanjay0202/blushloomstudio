@@ -4,6 +4,12 @@ const nextConfig = {
   ...(process.env.NODE_ENV === 'production' && { output: 'export' }),
   basePath: process.env.NODE_ENV === 'production' ? '/blushloomstudio' : '',
   assetPrefix: process.env.NODE_ENV === 'production' ? '/blushloomstudio' : '',
+  
+  // Environment variables
+  env: {
+    NEXT_PUBLIC_BASE_PATH: process.env.NODE_ENV === 'production' ? '/blushloomstudio' : '',
+  },
+  
   images: {
     unoptimized: true, // Required for static export
     formats: ['image/avif', 'image/webp'],

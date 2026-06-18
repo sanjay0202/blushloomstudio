@@ -3,13 +3,14 @@ import productsData from '@/data/products.json';
 
 /**
  * Get the base path for the application
+ * This is set at build time for static export
  */
-export function getBasePath(): string {
-  return process.env.NODE_ENV === 'production' ? '/blushloomstudio' : '';
-}
+const BASE_PATH = typeof window !== 'undefined'
+  ? (window.location.pathname.includes('/blushloomstudio') ? '/blushloomstudio' : '')
+  : (process.env.NEXT_PUBLIC_BASE_PATH || '/blushloomstudio');
 
 /**
- * Get image path with basePath prefix for production
+ * Get image path with basePath prefix
  */
 export function getImagePath(path: string): string {
   // If path already includes basePath or is external, return as is
@@ -17,9 +18,9 @@ export function getImagePath(path: string): string {
     return path;
   }
   
-  // For production, prepend basePath to absolute paths
-  if (process.env.NODE_ENV === 'production' && path.startsWith('/')) {
-    return `${getBasePath()}${path}`;
+  // For absolute paths, prepend basePath
+  if (path.startsWith('/') && BASE_PATH) {
+    return `${BASE_PATH}${path}`;
   }
   
   return path;
@@ -31,7 +32,7 @@ export function getImagePath(path: string): string {
 export function getAllProducts(): Product[] {
   const products = productsData as Product[];
   
-  // Transform image paths to include basePath in production
+  // Transform image paths to include basePath
   return products.map(product => ({
     ...product,
     images: product.images.map(img => getImagePath(img))
