@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useCallback } from 'react';
 import Link from 'next/link';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ChevronLeft, ChevronRight, Sparkles, ArrowRight } from 'lucide-react';
@@ -17,15 +17,15 @@ export default function FeaturedProductsCarousel({ products }: FeaturedProductsC
   const itemsPerPage = 4;
   const totalPages = Math.ceil(products.length / itemsPerPage);
 
-  const nextSlide = () => {
+  const nextSlide = useCallback(() => {
     setDirection(1);
     setCurrentIndex((prev) => (prev + 1) % totalPages);
-  };
+  }, [totalPages]);
 
-  const prevSlide = () => {
+  const prevSlide = useCallback(() => {
     setDirection(-1);
     setCurrentIndex((prev) => (prev - 1 + totalPages) % totalPages);
-  };
+  }, [totalPages]);
 
   // Auto-advance carousel
   useEffect(() => {
@@ -34,7 +34,7 @@ export default function FeaturedProductsCarousel({ products }: FeaturedProductsC
     }, 5000);
 
     return () => clearInterval(timer);
-  }, [currentIndex]);
+  }, [nextSlide]);
 
   const getCurrentProducts = () => {
     const start = currentIndex * itemsPerPage;
